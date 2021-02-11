@@ -3,7 +3,9 @@ const cors = require('cors');
 const bodyParser = require('body-parser');
 const express = require('express');
 const axios = require('axios');
+const PORT = process.env.PORT
 const app = express();
+app.set("port",PORT);
 app.use(bodyParser.json());
 app.use(cors({ origin: 'http://localhost:3000', credentials: true }));
 
