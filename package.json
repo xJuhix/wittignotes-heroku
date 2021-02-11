@@ -1,13 +1,21 @@
 {
-  "name": "wittignotes-heroku",
+  "name": "wittignotes_server",
   "version": "1.0.0",
-  "description": "WittigNotes Blog",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node server/index.js",
+		"heroku-postbuild": "cd ../client && npm install && npm install --only=dev --no-shrinkwrap && npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
+  "dependencies": {
+    "@sendgrid/mail": "^7.4.2",
+    "axios": "^0.21.1",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1"
+	},
+	"repository": {
     "type": "git",
     "url": "git+https://github.com/xJuhix/wittignotes-heroku.git"
   },
@@ -19,8 +27,5 @@
   "engines": {
     "node": "14.x"
   },
-  "homepage": "https://github.com/xJuhix/wittignotes-heroku#readme",
-  "dependencies": {
-    "express": "^4.17.1"
-  }
+  "homepage": "https://github.com/xJuhix/wittignotes-heroku#readme"
 }
