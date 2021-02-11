@@ -36,5 +36,13 @@ app.post('/sendmail', async (req, res) => {
 		});
 })
 });
+
+if (process.env.NODE_ENV === 'production') {
+	app.use(express.static(path.join(__dirname, '../client/build')));
+	app.get('*', function(req, res) {
+		res.sendFile(path.join(__dirname, '../client/build', 'index.html'));
+	});
+}
+
 app.listen(4242, () => console.log(`Listening on port ${4242}!`));
 
