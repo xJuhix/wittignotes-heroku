@@ -16,7 +16,7 @@ const corsOptions = {
 		} else {
 			callback(new Error('Not Allowed by CORS :/'));
 		}
-	}
+	}, credentials: true
 }
 app.use(cors(corsOptions));
 //app.use(cors({ origin: 'http://localhost:3000', credentials: true }));
