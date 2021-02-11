@@ -150,7 +150,7 @@ function ContactForm() {
             placeholder="What is your enquiry about"
             ref={register}
           />
-          {errors.messageField && (
+          {errors.subjectField && (
             <ErrorMessage>{errors.subjectField.message}</ErrorMessage>
           )}
         </Form.Group>
