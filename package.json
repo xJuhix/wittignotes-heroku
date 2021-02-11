@@ -1,0 +1,28 @@
+{
+  "name": "wittignotes-heroku",
+	"version": "1.0.0",
+	"engines": {
+  "node": "14.x",
+  "description": "WittigNotes Blog",
+  "main": "index.js",
+  "scripts": {
+		"start": "node server/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xJuhix/wittignotes-heroku.git"
+  },
+  "author": "Juhi Saigal",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xJuhix/wittignotes-heroku/issues"
+  },
+  "engines": {
+    "node": "10.x"
+  },
+  "homepage": "https://github.com/xJuhix/wittignotes-heroku#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
