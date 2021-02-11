@@ -65,6 +65,7 @@ function ContactForm() {
   }
 
   function onSubmit(data) {
+    console.log(data);
     const raw = {
       yourEmail: 'felixwittig@wittignotes.com',
       yourName: 'Felix',
