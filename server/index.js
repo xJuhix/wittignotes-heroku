@@ -3,7 +3,7 @@ const cors = require('cors');
 const bodyParser = require('body-parser');
 const express = require('express');
 const path = require('path');
-const PORT = process.env.PORT
+const PORT = process.env.PORT || 8080;
 const app = express();
 app.set("port",PORT);
 app.use(bodyParser.json());
@@ -43,7 +43,5 @@ if (process.env.NODE_ENV === 'production') {
 		res.sendFile(path.join(__dirname, '../client/build', 'index.html'));
 	});
 }
-
-const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => console.log(`Listening on port ${PORT}!`));
 
