@@ -1,0 +1,59 @@
+// custom
+
+$colour-headerfooter: #292b2f;
+$colour-background: #4f555c;
+$colour-heading: #000;
+$colour-primary: #3c3c3c;
+$colour-secondary: #fff;
+$colour-blue: #45c5ef;
+
+$colour-input: #3c3c3c;
+
+$medium-width: 768px;
+
+// bootstrap
+$theme-colors: (
+  'primary': $colour-primary,
+  'dark': $colour-headerfooter,
+);
+
+$font-size-base: 1rem !default;
+$h1-font-size: $font-size-base * 4 !default;
+$h2-font-size: $font-size-base * 3 !default;
+$h5-font-size: $font-size-base * 1.8 !default;
+
+$headings-font-weight: 0 !default;
+
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-weight: $headings-font-weight;
+}
+
+$navbar-light-toggler-border-color: $colour-headerfooter !default;
+$navbar-dark-color: $colour-secondary !default;
+$navbar-light-toggler-icon-bg: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'><path stroke='#{$navbar-dark-color}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>") !default;
+
+$nav-tabs-link-active-color: $colour-secondary !default;
+$nav-link-disabled-color: rgb(218, 218, 218) fff !default;
+$nav-tabs-link-active-border-color: $colour-blue !default;
+
+$link-hover-color: $colour-blue !default;
+
+$jumbotron-color: $colour-heading !default;
+$jumbotron-bg: $colour-secondary !default;
+
+$input-bg: $colour-secondary;
+$input-border-color: $colour-input;
+$border-radius: 3px;
+
+$input-placeholder-color: $colour-primary;
+$input-plaintext-color: $colour-primary;
+
+$body-bg: $colour-background;
+
+$card-bg: $colour-secondary;
+$card-cap-bg: $colour-heading;
+
+
+$info: $colour-blue !default;

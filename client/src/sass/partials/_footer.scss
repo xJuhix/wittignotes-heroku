@@ -1,0 +1,45 @@
+.footer {
+  background-color: $colour-headerfooter;
+  color: $colour-secondary;
+
+  @media (max-width: 576px) {
+    text-align: center;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    padding: 20px;
+    padding-top: 10px;
+
+    @media (max-width: 576px) {
+      flex-direction: column;
+    }
+  }
+
+  &__text,
+  &__links {
+		padding-top: 15px;
+  }
+
+  &__socialmedia-icon {
+    color: $colour-secondary;
+    padding: 5px;
+		padding-top: 10px;
+		
+		:hover{
+			color: $colour-blue;
+		}
+
+		span {
+			svg {
+				height: 2rem;
+				width: 2rem;
+			}
+		}
+
+  }
+}
+
+ 

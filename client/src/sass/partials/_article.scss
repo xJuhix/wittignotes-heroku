@@ -1,0 +1,34 @@
+.article {
+  background-color: $colour-secondary;
+  margin-bottom: 5rem;
+  margin-top: 5rem;
+
+  &__subtitle {
+    color: $colour-headerfooter;
+    padding-top: 3rem;
+    text-align: center;
+    
+  }
+
+  &__details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 10px;
+  }
+
+  &__body {
+    padding-bottom: 20px;
+
+    &__content {
+      margin-bottom: 3rem;
+      margin-top: 4rem;
+    }
+  }
+}
+ .article-img {
+	max-height: 900px;
+	width: 100%;
+	margin-top: 3rem;
+	margin-bottom: 3rem;
+}

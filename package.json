@@ -1,12 +1,10 @@
 {
   "name": "wittignotes-heroku",
-	"version": "1.0.0",
-	"engines": {
-  "node": "14.x",
+  "version": "1.0.0",
   "description": "WittigNotes Blog",
   "main": "index.js",
   "scripts": {
-		"start": "node server/server.js",
+    "start": "node server/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,7 +17,8 @@
     "url": "https://github.com/xJuhix/wittignotes-heroku/issues"
   },
   "engines": {
-    "node": "10.x"
+    "node": "14.x",
+    "npm": "6.x"
   },
   "homepage": "https://github.com/xJuhix/wittignotes-heroku#readme",
   "dependencies": {

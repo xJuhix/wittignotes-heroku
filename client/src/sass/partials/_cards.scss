@@ -1,0 +1,40 @@
+.card {
+	box-shadow: 9px 9px 9px $colour-headerfooter;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3rem;
+  max-height: 550px;
+  transition: all 0.2s;
+  width: 19rem;
+
+  &:hover {
+    box-shadow: 6px 6px 6px 6px $colour-blue;
+	}
+	
+
+  &__image {
+    height: 180px;
+    margin: 0;
+    width: 250;
+	}
+	
+	.card-title{
+		font-family: $font-h1;
+	}
+
+  .btn-submit {
+		background-color: $colour-secondary;
+		font-family: $font-navlink;
+		font-size: 22px;
+		border-radius: 30px;
+		border: solid;
+
+    &:hover {
+      background-color: $colour-headerfooter;
+			color: $colour-blue;
+			text-decoration: underline 2px $colour-blue;
+			
+    }
+  }
+}

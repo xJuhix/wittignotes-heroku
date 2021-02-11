@@ -1,0 +1,29 @@
+.search__page {
+  h1 {
+    color: $colour-secondary;
+    text-align: center;
+  }
+}
+.search__bar {
+	display: flex;
+	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 3rem;
+	width: 80% !important;
+
+	.form-control{
+		font-size: 22px;
+		font-family: $font-navlink;
+		height: 3rem;
+		border-radius: 30px;
+		padding: 20px;
+	}
+
+}
+
+.spinner{
+	margin-top: 5rem;
+	margin-left: 50%;
+	margin-right: 50%;
+}

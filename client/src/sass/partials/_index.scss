@@ -1,0 +1,135 @@
+.jumbotron {
+  background-color: $colour-secondary;
+  margin-bottom: 3rem;
+  margin-left: 0;
+  margin-right: 0;
+  text-align: center;
+  width: 100%;
+}
+
+.browse__button{
+	display: flex;
+  justify-content: center;
+  align-items: center;
+	height: 200px;
+	margin-bottom: 3rem;
+
+	.btn-browse {
+		background-color: $colour-secondary;
+		border-radius: 30px;
+		border: solid;
+		width: 400px;
+		margin-top: 3rem;
+		font-size: 28px;
+		font-family: $font-navlink;
+		font-weight: 500;
+
+		@media (max-width: 576px) and (max-width: 768px) {
+			font-size: 24px;
+			width: 300px;
+		}
+		
+		&:hover {
+			background-color: $colour-headerfooter;
+			color: $colour-blue;
+			text-decoration: underline;
+			text-decoration-style: solid;
+			text-decoration-thickness: 3px;
+			text-decoration-color: $colour-blue;
+			-webkit-text-decoration-color: $colour-blue ;
+			-webkit-text-decoration-thickness: 3px ;
+			-webkit-text-decoration-style: solid ;
+		}
+	}
+}
+
+
+.about {
+	margin-top: 7rem;
+	margin-bottom: 7rem;
+	background-color: $colour-secondary;
+
+	@media (min-width: 768px) and (max-width: 1024px) {
+		height: 550px;
+		margin-top: 4rem;
+	}
+  
+  .row {
+		height: 300px;
+		margin-bottom: 7rem;
+
+    @media (min-width: 300px) and (max-width: 1080px) {
+      height: auto;
+    }
+	}
+	
+	&__image {
+  display: flex;
+	justify-content: center; 
+	margin-bottom: 12rem;
+
+		@media (min-width: 768px) and (max-width: 1080px) {
+			margin-left: 3rem;
+		}
+		@media (max-width: 576px) {
+			margin-bottom: 2rem;
+
+		}
+
+		.photo {
+			bottom: 90px;
+			height: 500px;
+			position: relative;
+
+			@media (min-width: 768px) and (max-width: 1080px) {
+				bottom: 0;
+				margin-top: 1.5rem;
+				width: 550px;
+			}
+
+			@media (max-width: 576px) {
+				bottom: 0;
+				margin-top: 2rem;
+				width: 525px;
+			}
+		}
+	}
+
+	&__text {
+		padding: 35px;
+
+		@media (min-width: 768px) and (max-width: 1024px) {
+			margin-left: 3rem;
+			margin-top: 7rem;
+		}
+		@media (max-width: 576px) {
+			padding: 15px;
+			width: auto;
+		}
+		
+
+		h3 {
+			font-size: 32px;
+			text-align: center;
+		}
+
+		p {
+			font-size: 18px;
+			margin-top: 2rem;
+			text-align: center;
+
+			@media (min-width: 768px) and (max-width: 1024px) {
+				text-align: left;
+			}
+
+			@media (max-width: 576px) {
+				text-align: left;
+				margin-left: 1.5rem;
+				margin-right: 1.5rem;
+			}
+			
+		}
+	}	
+
+}
+
