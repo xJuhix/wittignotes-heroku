@@ -8,7 +8,6 @@ const app = express();
 app.set("port",PORT);
 app.use(bodyParser.json());
 
-
 const whitelist = [`http://localhost:${PORT}`, 'http://localhost:3000', 'https://wittignotes.herokuapp.com/', 'https://wittignotes.com/']
 const corsOptions = {
 	origin: function(origin, callback) {
@@ -19,9 +18,8 @@ const corsOptions = {
 		}
 	}, credentials: true
 }
-
 app.use(cors(corsOptions));
-//app.use(cors({ origin: `http://localhost:${PORT}`, credentials: true }));
+//app.use(cors({ origin: 'http://localhost:3000', credentials: true }));
 
 const sgMail = require('@sendgrid/mail');
 sgMail.setApiKey(process.env.SENDGRID_API_KEY);
@@ -48,7 +46,7 @@ app.post('/sendmail', async (req, res) => {
 			success: false,
 			message: 'It seems like something went wrong. Please try again later.'
 		});
-	})
+})
 });
 
 if (process.env.NODE_ENV === 'production') {
