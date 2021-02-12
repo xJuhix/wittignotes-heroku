@@ -8,7 +8,7 @@ const app = express();
 app.set("port",PORT);
 app.use(bodyParser.json());
 
-const whitelist = [`http://localhost:${PORT}`, 'http://localhost:3000', 'https://wittignotes.herokuapp.com/']
+const whitelist = [`http://localhost:${PORT}`, 'http://localhost:3000', 'https://wittignotes.herokuapp.com']
 const corsOptions = {
 	origin: function(origin, callback) {
 		if (whitelist.indexOf(origin) !== -1 || !origin) {
