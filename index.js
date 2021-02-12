@@ -9,7 +9,7 @@ app.set("port",PORT);
 app.use(bodyParser.json());
 
 
-/*const whitelist = [`http://localhost:${PORT}`, 'http://localhost:3000', 'https://wittignotes.herokuapp.com/', 'https://wittignotes.com/']
+const whitelist = [`http://localhost:${PORT}`, 'http://localhost:3000', 'https://wittignotes.herokuapp.com/', 'https://wittignotes.com/']
 const corsOptions = {
 	origin: function(origin, callback) {
 		if (whitelist.indexOf(origin) !== -1 || !origin) {
@@ -18,9 +18,10 @@ const corsOptions = {
 			callback(new Error('Not Allowed by CORS :/'));
 		}
 	}, credentials: true
-}*/
+}
+
 app.use(cors(corsOptions));
-app.use(cors({ origin: `http://localhost:${PORT}`, credentials: true }));
+//app.use(cors({ origin: `http://localhost:${PORT}`, credentials: true }));
 
 const sgMail = require('@sendgrid/mail');
 sgMail.setApiKey(process.env.SENDGRID_API_KEY);
