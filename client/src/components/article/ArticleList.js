@@ -8,7 +8,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Spinner from 'react-bootstrap/Spinner';
 import Alert from 'react-bootstrap/Alert';
-import { BASE_URL } from '../../constants/api';
+import { ALL_URL } from '../../constants/api';
 import ArticleSearch from './ArticleSearch';
 import ArticleItem from './ArticleItem';
 
@@ -20,7 +20,7 @@ function AllArticles() {
 
   // Getting the articles from API
   useEffect(() => {
-    fetch(BASE_URL)
+    fetch(ALL_URL)
       .then((response) => response.json())
       .then((json) => {
         setArticles(json);
